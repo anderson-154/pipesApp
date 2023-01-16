@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class NoComunesComponent {
 //i18nSelecet
-  nombre:string='rosa'
-  genero:string='femenino'
+  nombre:string='anderson'
+  genero:string='masculino'
 
   invitacionMap={
     'masculino':'invitarlo',
@@ -25,4 +25,12 @@ export class NoComunesComponent {
     'other':'tenemos # clientes esperando.'
   }
 
+  CambiarCliente(){
+    this.nombre='rosa'
+    this.genero='femenino'
+  }
+
+  borrarCliente(){
+      this.clientes.pop()
+  }
 }
