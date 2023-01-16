@@ -4,14 +4,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 //Modulo personalizado
 
 //Cambiar el locale de la app
 import localEs from '@angular/common/locales/es-CO';
+import localFr from '@angular/common/locales/fr';
+
 import { registerLocaleData } from '@angular/common';
 
 registerLocaleData(localEs);
+registerLocaleData(localFr);
 
 @NgModule({
   declarations: [
@@ -19,6 +24,7 @@ registerLocaleData(localEs);
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
     VentasModule

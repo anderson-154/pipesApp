@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre: string='AnDeRson CardeNaS'
+ //servicio para el FieldSet de animacion al darle click al header
+  constructor(private primengConfig: PrimeNGConfig) {}
 
-  mostrarNombre(){
-      console.log(this.nombre)
+  ngOnInit() {
+    this.primengConfig.ripple = true;
   }
 }
