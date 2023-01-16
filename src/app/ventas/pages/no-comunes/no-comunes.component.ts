@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, ReplaySubject } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -33,4 +34,39 @@ export class NoComunesComponent {
   borrarCliente(){
       this.clientes.pop()
   }
+
+  //KeyValue pipe
+
+  persona={
+    nombre:'Anderson',
+    edad:21,
+    direccion:'Cali, Colombia'
+  }
+
+
+  //JSON pipe
+
+  heroes = [
+    {
+      nombre:'superman',
+      vuela: true
+    },
+    {
+      nombre:'robin',
+      vuela: false
+    },
+    {
+      nombre:'aquaman',
+      vuela: false
+    },
+  ]
+
+  //async pipe
+
+  miObservable = interval(1000);
+  valorPromesa = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve('Tenemos data de promesa')
+    },3500)
+  });
 }
