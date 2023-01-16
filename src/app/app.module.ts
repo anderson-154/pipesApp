@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { VentasModule } from './ventas/ventas.module';
 
 //Modulo personalizado
 
@@ -15,6 +16,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    VentasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

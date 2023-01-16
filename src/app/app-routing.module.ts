@@ -12,7 +12,7 @@ const routes: Routes = [
   pathMatch: 'full'
  },
  {
-  path:'numeros',
+  path: 'numeros',
   component: NumerosComponent
  },
  {
