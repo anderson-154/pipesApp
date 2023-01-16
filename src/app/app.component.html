@@ -2,8 +2,16 @@
 <div class="text-color">
   <h1>{{'Hola Mundo' | uppercase}}</h1>
 </div>
-
+<hr>
 <button pButton 
-(click)="mostrarNombre()"
-label="Cambiar nombre">
+  (click)="mostrarNombre()"
+  label="Cambiar nombre"
+  icon="pi pi-github"
+  iconPos="left"
+  class="p-button-help">
 </button>
+
+<p-card [header]="nombre | titlecase"
+        subheader="Sub Header">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, minus temporibus! Est maiores neque quis corrupti facere soluta nam voluptates iure rerum, alias, vero maxime unde placeat? Culpa, unde molestias.
+</p-card>
