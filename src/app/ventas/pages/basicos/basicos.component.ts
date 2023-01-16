@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class BasicosComponent {
 
+  nombreLower:string='anderson cardenas'
+  nombreUpper:string='ANDERSON CARDENAS'
+  nombreCompleto:string='anDERson CarDEnaS'
+  fecha:Date = new Date()
+
 }
