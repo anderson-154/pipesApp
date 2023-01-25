@@ -10,19 +10,21 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 export class OrdenarComponent {
 
   toogle:boolean=true;
+  ordenarPor:string=''
+
   heroes: Heroe[] = [
     {
-      nombre:'superman',
+      nombre:'Superman',
       vuela:true,
       color: Color.azul
     },
     {
-      nombre:'batman',
+      nombre:'Batman',
       vuela:false,
       color: Color.negro
     },
     {
-      nombre:'robin',
+      nombre:'Robin',
       vuela:false,
       color: Color.verde
     },
@@ -32,7 +34,7 @@ export class OrdenarComponent {
       color: Color.rojo
     },
     {
-      nombre:'linterna verde',
+      nombre:'Linterna verde',
       vuela:true,
       color: Color.verde
     }
@@ -46,5 +48,9 @@ export class OrdenarComponent {
 
     this.toogle = !this.toogle;
     //(this.toogle) ? this.toogle=false : this.toogle=true
+  }
+
+  cambiarOrden(valor:string){
+    this.ordenarPor = valor;
   }
 }
